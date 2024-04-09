@@ -1,3 +1,5 @@
+package org.example;
+
 public enum Gezegen {
     MERKUR(1, 0.39, 2439.7, 58.6),
     VENUS(2, 0.72, 6051.8, 243),
@@ -37,14 +39,4 @@ public enum Gezegen {
     }
 
     // Main metodu
-    public static void main(String[] args) {
-        for (Gezegen gezegen : Gezegen.values()) {
-            System.out.println(gezegen.name() + ":");
-            System.out.println("Sıra Numarası: " + gezegen.getSiraNumarasi());
-            System.out.println("Uzaklık: " + gezegen.getUzaklik());
-            System.out.println("Yarıçap: " + gezegen.getYaricap());
-            System.out.println("Dönme Süresi: " + gezegen.getDonmeSuresi());
-            System.out.println("------------------------");
-        }
-    }
 }
